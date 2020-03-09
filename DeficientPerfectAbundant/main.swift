@@ -32,3 +32,21 @@ while true {
     
     break
 }
+
+var total = 0
+
+for number in 1...n - 1 {
+    //find the proper divisors of n
+    if n % number == 0 {
+        total += number
+    }
+    
+}
+
+print(total)
+
+//if total < n {
+//    print("\(n) is a deficient number")
+//} else if total == n {
+//    print("\()")
+//}
