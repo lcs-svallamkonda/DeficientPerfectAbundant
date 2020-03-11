@@ -43,6 +43,7 @@ while true {
     for number in 1...n {
         //find the proper divisors of n
         if n % number == 0 {
+            //if else statement to eliminate the number itself
             if number != n {
                    total += number
             } else {
