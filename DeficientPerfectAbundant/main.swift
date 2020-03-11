@@ -40,15 +40,20 @@ while true {
     
     var total = 0
     
-    for number in 0...n - 1 {
+    for number in 1...n {
         //find the proper divisors of n
         if n % number == 0 {
-            total += number
+            if number != n {
+                   total += number
+            } else {
+                total += 0
+            }
+         
         }
         
     }
     
-    print(total)
+    //print(total)
     
     if total < n {
         print("\(n) is a deficient number")
